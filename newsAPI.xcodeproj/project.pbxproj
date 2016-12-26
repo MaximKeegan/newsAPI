@@ -13,9 +13,17 @@
 		933866FA1E1054520011D173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933866F81E1054520011D173 /* Main.storyboard */; };
 		933866FC1E1054520011D173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 933866FB1E1054520011D173 /* Assets.xcassets */; };
 		933866FF1E1054520011D173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 933866FD1E1054520011D173 /* LaunchScreen.storyboard */; };
+		933867091E10547E0011D173 /* Database.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 933867071E10547E0011D173 /* Database.xcdatamodeld */; };
+		9338670D1E1146290011D173 /* ArticlesNetworkHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9338670C1E1146290011D173 /* ArticlesNetworkHelper.m */; };
+		933867111E1146700011D173 /* ArticlesLoadTask.m in Sources */ = {isa = PBXBuildFile; fileRef = 933867101E1146700011D173 /* ArticlesLoadTask.m */; };
+		93E7FC011E115581009E99A9 /* Article.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E7FC001E115581009E99A9 /* Article.m */; };
+		93E7FC041E116428009E99A9 /* ArticlesTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 93E7FC031E116428009E99A9 /* ArticlesTableViewCell.m */; };
+		BFF646BB50BEB5E494FE1D99 /* libPods-newsAPI.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 728D99A27C952A9471AF4517 /* libPods-newsAPI.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6269BCC0AAE49BD1F9ED4530 /* Pods-newsAPI.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsAPI.release.xcconfig"; path = "Pods/Target Support Files/Pods-newsAPI/Pods-newsAPI.release.xcconfig"; sourceTree = "<group>"; };
+		728D99A27C952A9471AF4517 /* libPods-newsAPI.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-newsAPI.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		933866EC1E1054510011D173 /* newsAPI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = newsAPI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		933866F01E1054510011D173 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		933866F21E1054510011D173 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -26,6 +34,16 @@
 		933866FB1E1054520011D173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		933866FE1E1054520011D173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		933867001E1054520011D173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		933867081E10547E0011D173 /* Database.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Database.xcdatamodel; sourceTree = "<group>"; };
+		9338670B1E1146290011D173 /* ArticlesNetworkHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticlesNetworkHelper.h; sourceTree = "<group>"; };
+		9338670C1E1146290011D173 /* ArticlesNetworkHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticlesNetworkHelper.m; sourceTree = "<group>"; };
+		9338670F1E1146700011D173 /* ArticlesLoadTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticlesLoadTask.h; sourceTree = "<group>"; };
+		933867101E1146700011D173 /* ArticlesLoadTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticlesLoadTask.m; sourceTree = "<group>"; };
+		93E7FBFF1E115581009E99A9 /* Article.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Article.h; sourceTree = "<group>"; };
+		93E7FC001E115581009E99A9 /* Article.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Article.m; sourceTree = "<group>"; };
+		93E7FC021E116428009E99A9 /* ArticlesTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ArticlesTableViewCell.h; sourceTree = "<group>"; };
+		93E7FC031E116428009E99A9 /* ArticlesTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ArticlesTableViewCell.m; sourceTree = "<group>"; };
+		C3DE4AC7503A81D6564B5265 /* Pods-newsAPI.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-newsAPI.debug.xcconfig"; path = "Pods/Target Support Files/Pods-newsAPI/Pods-newsAPI.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +51,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFF646BB50BEB5E494FE1D99 /* libPods-newsAPI.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		525F3614679583F2C63D5EAB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				728D99A27C952A9471AF4517 /* libPods-newsAPI.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		933866E31E1054510011D173 = {
 			isa = PBXGroup;
 			children = (
-				933866EE1E1054510011D173 /* newsAPI */,
+				525F3614679583F2C63D5EAB /* Frameworks */,
+				EC16C21E95A457E583F54154 /* Pods */,
 				933866ED1E1054510011D173 /* Products */,
+				933866EE1E1054510011D173 /* newsAPI */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,15 +87,14 @@
 		933866EE1E1054510011D173 /* newsAPI */ = {
 			isa = PBXGroup;
 			children = (
+				93E7FC051E116C63009E99A9 /* Controllers */,
+				933867061E1054610011D173 /* Database */,
+				9338670A1E1145AE0011D173 /* HetworkHelper */,
+				93E7FC081E116C7A009E99A9 /* Interface */,
+				93E7FC091E116C88009E99A9 /* Resources */,
+				933866EF1E1054510011D173 /* Supporting Files */,
 				933866F21E1054510011D173 /* AppDelegate.h */,
 				933866F31E1054510011D173 /* AppDelegate.m */,
-				933866F51E1054510011D173 /* ViewController.h */,
-				933866F61E1054510011D173 /* ViewController.m */,
-				933866F81E1054520011D173 /* Main.storyboard */,
-				933866FB1E1054520011D173 /* Assets.xcassets */,
-				933866FD1E1054520011D173 /* LaunchScreen.storyboard */,
-				933867001E1054520011D173 /* Info.plist */,
-				933866EF1E1054510011D173 /* Supporting Files */,
 			);
 			path = newsAPI;
 			sourceTree = "<group>";
@@ -76,7 +104,86 @@
 			children = (
 				933866F01E1054510011D173 /* main.m */,
 			);
-			name = "Supporting Files";
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		933867061E1054610011D173 /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				93E7FBFF1E115581009E99A9 /* Article.h */,
+				93E7FC001E115581009E99A9 /* Article.m */,
+				933867071E10547E0011D173 /* Database.xcdatamodeld */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		9338670A1E1145AE0011D173 /* HetworkHelper */ = {
+			isa = PBXGroup;
+			children = (
+				9338670E1E1146500011D173 /* Tasks */,
+				9338670B1E1146290011D173 /* ArticlesNetworkHelper.h */,
+				9338670C1E1146290011D173 /* ArticlesNetworkHelper.m */,
+			);
+			path = HetworkHelper;
+			sourceTree = "<group>";
+		};
+		9338670E1E1146500011D173 /* Tasks */ = {
+			isa = PBXGroup;
+			children = (
+				9338670F1E1146700011D173 /* ArticlesLoadTask.h */,
+				933867101E1146700011D173 /* ArticlesLoadTask.m */,
+			);
+			path = Tasks;
+			sourceTree = "<group>";
+		};
+		93E7FC051E116C63009E99A9 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				93E7FC071E116C74009E99A9 /* Cells */,
+				933866F51E1054510011D173 /* ViewController.h */,
+				933866F61E1054510011D173 /* ViewController.m */,
+			);
+			name = Controllers;
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		93E7FC071E116C74009E99A9 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				93E7FC021E116428009E99A9 /* ArticlesTableViewCell.h */,
+				93E7FC031E116428009E99A9 /* ArticlesTableViewCell.m */,
+			);
+			name = Cells;
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		93E7FC081E116C7A009E99A9 /* Interface */ = {
+			isa = PBXGroup;
+			children = (
+				933866FD1E1054520011D173 /* LaunchScreen.storyboard */,
+				933866F81E1054520011D173 /* Main.storyboard */,
+			);
+			name = Interface;
+			path = Interface;
+			sourceTree = "<group>";
+		};
+		93E7FC091E116C88009E99A9 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				933866FB1E1054520011D173 /* Assets.xcassets */,
+				933867001E1054520011D173 /* Info.plist */,
+			);
+			name = Resources;
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EC16C21E95A457E583F54154 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C3DE4AC7503A81D6564B5265 /* Pods-newsAPI.debug.xcconfig */,
+				6269BCC0AAE49BD1F9ED4530 /* Pods-newsAPI.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +193,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 933867031E1054520011D173 /* Build configuration list for PBXNativeTarget "newsAPI" */;
 			buildPhases = (
+				9230BF346447D52550AF16C3 /* [CP] Check Pods Manifest.lock */,
 				933866E81E1054510011D173 /* Sources */,
 				933866E91E1054510011D173 /* Frameworks */,
 				933866EA1E1054510011D173 /* Resources */,
+				5A8C2CB14C4888382F583B8B /* [CP] Embed Pods Frameworks */,
+				4A51F89544E2D3B4E110E07F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -146,13 +256,66 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4A51F89544E2D3B4E110E07F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-newsAPI/Pods-newsAPI-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5A8C2CB14C4888382F583B8B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-newsAPI/Pods-newsAPI-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9230BF346447D52550AF16C3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		933866E81E1054510011D173 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9338670D1E1146290011D173 /* ArticlesNetworkHelper.m in Sources */,
 				933866F71E1054510011D173 /* ViewController.m in Sources */,
+				93E7FC011E115581009E99A9 /* Article.m in Sources */,
 				933866F41E1054510011D173 /* AppDelegate.m in Sources */,
+				93E7FC041E116428009E99A9 /* ArticlesTableViewCell.m in Sources */,
+				933867111E1146700011D173 /* ArticlesLoadTask.m in Sources */,
+				933867091E10547E0011D173 /* Database.xcdatamodeld in Sources */,
 				933866F11E1054510011D173 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +329,7 @@
 				933866F91E1054520011D173 /* Base */,
 			);
 			name = Main.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 		933866FD1E1054520011D173 /* LaunchScreen.storyboard */ = {
@@ -174,6 +338,7 @@
 				933866FE1E1054520011D173 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -271,10 +436,11 @@
 		};
 		933867041E1054520011D173 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C3DE4AC7503A81D6564B5265 /* Pods-newsAPI.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V2A6DFTLK6;
-				INFOPLIST_FILE = newsAPI/Info.plist;
+				INFOPLIST_FILE = newsAPI/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.keegan.newsAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -283,10 +449,11 @@
 		};
 		933867051E1054520011D173 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6269BCC0AAE49BD1F9ED4530 /* Pods-newsAPI.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = V2A6DFTLK6;
-				INFOPLIST_FILE = newsAPI/Info.plist;
+				INFOPLIST_FILE = newsAPI/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ru.keegan.newsAPI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -312,8 +479,22 @@
 				933867051E1054520011D173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		933867071E10547E0011D173 /* Database.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				933867081E10547E0011D173 /* Database.xcdatamodel */,
+			);
+			currentVersion = 933867081E10547E0011D173 /* Database.xcdatamodel */;
+			path = Database.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 933866E41E1054510011D173 /* Project object */;
 }
